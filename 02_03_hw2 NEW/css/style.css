@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap');
 
 
-
 body {
     margin: 0;
     padding: 0;
@@ -40,11 +39,9 @@ body {
     font-family: "Proxima Nova Rg";
     font-size: 15px;
     font-weight: 400;
-    font-style: normal;
     text-align: left;
     text-transform: uppercase;
     letter-spacing: 4.8px;
-    line-height: normal;
 }
 
 .header__text {
@@ -52,9 +49,6 @@ body {
     font-family: "Playfair Display";
     font-size: 48px;
     font-weight: 400;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: normal;
     text-align: left;
 }
 
@@ -138,8 +132,6 @@ body {
     font-family: "Proxima Nova Rg";
     font-size: 20px;
     font-weight: 400;
-    font-style: normal;
-    line-height: normal;
     text-align: left;
     text-transform: uppercase;
     letter-spacing: 6.72px;
@@ -152,11 +144,9 @@ body {
 	font-family: 'Futura PT';
     font-size: 78px;
     font-weight: 800;
-    font-style: normal;
     text-align: left;
     text-transform: uppercase;
     letter-spacing: 5.28px;
-    line-height: normal;
 }
 
 .intro__entitlу {
@@ -165,20 +155,16 @@ body {
     font-family: "Georgia";
     font-size: 30px;
     font-style: italic;
-    letter-spacing: normal;
     text-align: justify;
-    line-height: normal;
     margin-bottom: 55px;
 }
 
 .intro__text {
     width: 100%;
     color: #000000;
-    font-family: Georgia;
+    font-family: "Georgia";
     font-size: 27px;
     font-weight: 400;
-    font-style: normal;
-    letter-spacing: normal;
     line-height: 40.38px;
     text-align: justify;
 }
@@ -186,6 +172,4 @@ body {
 .italic {
     font-family: "Georgia";
     font-style: italic;
-    letter-spacing: normal;
-    line-height: normal;
 }
