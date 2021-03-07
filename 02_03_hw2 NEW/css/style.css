@@ -1,0 +1,175 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 1200px;
+    height: 100vh;
+    background-color: #464f54;
+    position: absolute;   
+}
+
+.conteiner {
+    top: 50px;
+    position: absolute;
+    left: 64px;
+    bottom: 50px;
+}
+
+/* header */
+.header {
+    position: relative;
+    top: 47px;
+    left: 420px;
+    width: 100%;
+    max-width: 876px;
+    height: 187px;
+    -webkit-box-shadow: -4px -4px 59px rgba(0, 0, 0, 0.16);
+            box-shadow: -4px -4px 59px rgba(0, 0, 0, 0.16);
+    background-color: #181818;
+    z-index: 999999;
+    overflow: hidden;
+}
+
+.header__title {
+    color: #767676;
+    font-family: "Proxima Nova Rg";
+    font-size: 15px;
+    font-weight: 400;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 4.8px;
+}
+
+.header__text {
+    color: #fefefe;
+    font-family: "Playfair Display";
+    font-size: 48px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.cursor {
+    color: #edeff2;
+    opacity: 0.71;
+}
+
+.header__text::after {
+    content: "";
+    display: block;
+    width: 854px;
+    height: 3px;
+    background-color: #ffffff;
+    opacity: 0.1;
+    margin-top: 10px;
+}
+
+/* button */
+
+.button {
+    width: 100%;
+    max-width: 812px;
+    height: 76px;
+    -webkit-box-shadow: -4px -4px 59px rgba(0, 0, 0, 0.16);
+            box-shadow: -4px -4px 59px rgba(0, 0, 0, 0.16);
+    background-color: #fbc02d;
+    list-style-type: none;
+    position: relative;
+    top: 47px;
+    left: 484px;
+    margin: 0;
+    padding: 0;
+    z-index: 999999;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 32px;
+}
+
+.button__icon {
+    color: white;
+    opacity: 0.5;
+    padding: 0 20px;
+}
+
+.button__icon:nth-child(1) {
+    margin-left: 20px;
+}
+
+.button__icon:nth-child(4) {
+    opacity: 1;
+}
+
+/* intro */
+.intro {
+    position: relative;
+    top: -110px;
+    width: 100%;
+    max-width: 1060px;
+    -webkit-box-shadow: 0 0 35px rgba(0, 0, 0, 0.22);
+            box-shadow: 0 0 35px rgba(0, 0, 0, 0.22);
+    background-color: #ffffff;
+    left: 180px;
+}
+
+.block {
+    border-left: 2px solid #e8eced;
+    margin-left: 67px;
+    padding-left: 55px;
+    padding-top: 202px;
+    max-width: 810px;
+}
+
+.intro__suptitle {
+    width: 100%;
+    color: #b4b4b4;
+    font-family: "Proxima Nova Rg";
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 6.72px;
+    margin-bottom: 47px;
+}
+
+.intro__title {
+    width: 100%;
+    color: #2a2a2a;
+	font-family: 'Futura PT';
+    font-size: 78px;
+    font-weight: 800;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 5.28px;
+}
+
+.intro__entitlу {
+    width: 100%;
+    color: #8f8f8f;
+    font-family: "Georgia";
+    font-size: 30px;
+    font-style: italic;
+    text-align: justify;
+    margin-bottom: 55px;
+}
+
+.intro__text {
+    width: 100%;
+    color: #000000;
+    font-family: "Georgia";
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 40.38px;
+    text-align: justify;
+}
+
+.italic {
+    font-family: "Georgia";
+    font-style: italic;
+}
