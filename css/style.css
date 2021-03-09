@@ -1,3 +1,5 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
 
 
@@ -8,19 +10,28 @@ body {
     color: #ffff;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     background-color: #e5eeee;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .registry {
-    box-shadow: 0px 30px 70px -20px rgb(2 41 120 / 75%);
+    -webkit-box-shadow: 0px 30px 70px -20px rgb(2 41 120 / 75%);
+            box-shadow: 0px 30px 70px -20px rgb(2 41 120 / 75%);
     width: 100%;
     max-width: 400px;
     height: 500px;
     background-size: cover;
+    background-image: url(../img/fon.png), -o-linear-gradient(58deg, #160b8d 20%, #c86dd7 80%);
     background-image: url(../img/fon.png), linear-gradient(32deg, #160b8d 20%, #c86dd7 80%);
 }
 
@@ -51,8 +62,13 @@ body {
 
 /* form */
 .form__control {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     max-width: 260px;
     margin-bottom: 20px;
 }
@@ -73,6 +89,8 @@ body {
     color: #fff;
     font-size: 20px;
     font-weight: 400;
+    -webkit-transition: background-color 0.3s ease-in-out;
+    -o-transition: background-color 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out;
 }
 
@@ -100,8 +118,14 @@ body {
 }
 
 .form__input_checkbox[type='checkbox'] + .form__label_checkbox{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: color 250ms cubic-bezier(.4,.0,.23,1);
+    -o-transition: color 250ms cubic-bezier(.4,.0,.23,1);
     transition: color 250ms cubic-bezier(.4,.0,.23,1);
 }
 
@@ -110,15 +134,23 @@ span {
 }
 
 .form__input_checkbox[type='checkbox'] + .form__label_checkbox > span{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-right: 10px;
     width: 16px;
     height: 16px;
     background: transparent;
     border: 2px solid #fff;
     cursor: pointer; 
+    -webkit-transition: all 250ms cubic-bezier(.4,.0,.23,1); 
+    -o-transition: all 250ms cubic-bezier(.4,.0,.23,1); 
     transition: all 250ms cubic-bezier(.4,.0,.23,1);
 }
 
@@ -126,13 +158,16 @@ span {
     font-size: 13px; 
     color: #FFEB3B;
     border: 2px solid #FFEB3B;
-    animation: shrink-bounce 200ms cubic-bezier(.4,.0,.23,1);
+    -webkit-animation: shrink-bounce 200ms cubic-bezier(.4,.0,.23,1);
+            animation: shrink-bounce 200ms cubic-bezier(.4,.0,.23,1);
 }
 
 /* form button */
 
 button{
-    appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     outline: 0;
     background-color: #FFEB3B;
     border: 0;
@@ -142,14 +177,20 @@ button{
     width: 260px;
     cursor: pointer;
     font-size: 18px;
-    transition-duration: 0.25s;
+    -webkit-transition-duration: 0.25s;
+         -o-transition-duration: 0.25s;
+            transition-duration: 0.25s;
     margin-bottom: 30px;
 }
 
 .form__account {
     max-width: 260px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .form__link {
@@ -178,7 +219,6 @@ button{
     height: 3px;
     background-color: yellowgreen;
 }
-
 
 
 
