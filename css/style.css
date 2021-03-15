@@ -191,7 +191,7 @@ body {
     font-weight: 300;
 }
 
-span {
+.footer__span {
     font-weight: 700;
     color: #ff2b58;
 }
