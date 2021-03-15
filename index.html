@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Form</title>
+</head>
+
+<body>
+    <div class="registry">
+        <div class="conteiner">
+            <nav class="nav">
+                <a class="nav__link" href="#">Sign in</a>
+                <a class="nav__link" href="#">Join us</a>
+
+            </nav>
+            <form action="#" method="get">
+                <div class="form">
+                    <div class="form__control">
+                        <label class="form__label form__label_username" for="username">Username</label>
+                        <input class="form__input form__input_username" id="username" name="Username" minlength="3"
+                            type="text">
+                    </div>
+                    <div class="form__control">
+                        <label class="form__label form__label_password" for="password">Password</label>
+                        <input class="form__input form__input_password" id="password" name="Password" type="password"
+                            minlength="5" required>
+                    </div>
+                    <div class="form__control form__control_checkbox">
+                        <input class="form__input form__input_checkbox" id="save" type="checkbox">
+                        <label class="form__label form__label_checkbox" for="save"><span
+                                class="checkbox__span">&#10004;</span> Keep me signed
+                            in</label>
+                    </div>
+                    <div class="form__controls form__controls_submit">
+                        <button type="submit" class="button">Sign in</button>
+                    </div>
+                    <div class="form__account">
+                        <a class="form__link" href="#">Forgot password</a>
+                        <a class="form__link" href="#">Create an account</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
