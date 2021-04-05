@@ -1,0 +1,332 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap');
+
+
+.body {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+.page {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background-color: #70bfff;
+    background-image: url(../img/tomat.png);
+    background-position: right 10% bottom 50%;
+    background-repeat: no-repeat;
+}
+
+.conteiner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    top: 20%;
+}
+
+/* menu */
+.menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.menu__button {
+    width: 400px;
+    height: 100px;
+    margin: 10px;
+    background-color: #FFFFFF;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    padding: 0;
+}
+
+.button {
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 20px;
+    font-weight: 700;
+    color: #262626;
+}
+
+.button__text {
+    font-size: 20px;
+    font-weight: 700;
+    color: #262626;
+    max-width: 240px;
+}
+
+.text {
+    width: 100%;
+    height: 90px;
+    padding-top: 10px; 
+    text-align: center;
+    margin-left: 50px;
+}
+
+._icon-shopping-cart, ._icon-plant, ._icon-carrot, ._icon-worldwide {
+    margin:0 25px;
+    border-left: 2px solid #9D9D9D;
+    padding-left: 20px;
+}
+
+.button__filling {
+    margin-top: 30px;
+}
+
+
+/* page_header  */
+.page_header {
+    color: #fff;
+    font-size: 90px;
+    font-weight: 700;
+}
+
+/* intro */
+.intro {
+    width: 100%;
+    height: 1550px;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background-color: #FFE92F;
+}
+
+/* section */ 
+
+.section__header{
+    width: 100%;
+    max-width: 580px;
+    margin: 0 auto;
+    position: relative;
+    top: 50px;
+    text-align: center;
+    color: #262626;
+}
+
+.section__title {
+    font-size: 90px;
+    font-weight: 700;
+}
+
+.section__text {
+    font-size: 17px;
+    line-height: 27px;
+    font-weight: 300;
+}
+
+/* gallery */
+
+.gallery {
+   position: relative;
+   top: 90px;
+}
+
+.gallery__img1 {
+    position: absolute;
+    left: 140px;
+}
+
+.gallery__img2 {
+    position: absolute;
+    left: 949px;
+}
+
+.gallery__img3 {
+    position: absolute;
+    left: 949px;
+    top: 291px;
+}
+
+.gallery__img4 {
+    position: absolute;
+    left: 140px;
+    top: 580px;
+}
+
+.gallery__img5 {
+    position: absolute;
+    left: 749px;
+    top: 580px;
+}
+
+/* button */
+
+.button__gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 20px;
+    font-weight: 300;
+    color: #262626;
+    position: relative;
+    top: 1140px; 
+}
+
+.button__button {
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    background-color: #5585A2;
+    text-decoration: none;
+    padding: 20px 43px;
+    margin: 0 auto;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+/* subscribe */
+.subscribe {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background-image: url(../img/subscribe_bg.png);
+    background-position:inherit;
+    background-repeat: no-repeat;
+}
+
+/* subscribe */
+
+.subscribe__header {
+    width: 100%;
+    max-width: 550px;
+    position: relative;
+    top: 145px;
+    left: 165px;
+    color: #262626;
+}
+
+.subscribe__title {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.subscribe__text {
+    font-size: 17px;
+    line-height: 27px;
+    font-weight: 300;
+}
+
+/* form */
+
+.subscribe_form {
+    position: relative;
+    top: 150px;
+    left: 165px;
+}
+
+.form__input {
+    width: 570px;
+    height: 55px;
+    opacity: 0.5;
+    margin-top: 15px;
+    border: 1px solid #262626;
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+    color: #262626;
+    padding: 0;
+}
+
+.form__input::-webkit-input-placeholder{
+    color: #262626;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
+}
+
+.form__input::-moz-placeholder{
+    color: #262626;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
+}
+
+.form__input:-ms-input-placeholder{
+    color: #262626;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
+}
+
+.form__input::-ms-input-placeholder{
+    color: #262626;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
+}
+
+.form__input::placeholder{
+    color: #262626;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
+}
+
+.form__input:focus,  .textarea:focus{
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    opacity: 1;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.form__input:focus:valid {
+    background-color: #96B92C;
+}
+
+.form__input:focus:invalid {
+    background-color: #920a80;
+}
+
+/* form button */
+.form__button{
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    outline: 0;
+    background-color: #96B92C;
+    border: 0;
+    color: #fff;
+    letter-spacing: 0.02em;
+    width: 170px;
+    height: 55px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.25s;
+         -o-transition-duration: 0.25s;
+            transition-duration: 0.25s;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-left: 25px;
+}
