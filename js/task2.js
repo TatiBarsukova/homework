@@ -1,4 +1,4 @@
-function GreatestCommonFactor() {
+function greatestCommonFactor() {
     let NOD;
     const a = prompt('Введите первое число: ');
     const b = prompt('Введите второе число: ');
@@ -18,7 +18,7 @@ function GreatestCommonFactor() {
     console.log(`Наибольшим общим делителем для числа ${a} и числа ${b}, является ${NOD}`);
 
 }
-GreatestCommonFactor();
+greatestCommonFactor();
 
 
 

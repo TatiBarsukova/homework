@@ -1,4 +1,4 @@
-function NumberOfDigits() {
+function numberOfDigits() {
     let myNum = prompt('Введите число: ');
 
     let res = myNum.replace(/\d+/, '');
@@ -20,7 +20,7 @@ function NumberOfDigits() {
     return num;
 }
 
-console.log('В вашем числе знаков =', + NumberOfDigits());
+console.log('В вашем числе знаков =', + numberOfDigits());
 
 
 
