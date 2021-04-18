@@ -3,10 +3,10 @@ function calcul() {
         const myNum1 = +prompt('Введите первое число');
         const operator = prompt('Выберите знак + - * /');
         const myNum2 = +prompt('Введите второе число');
-        const validOperators = ['+', '-', '*', '/'];
 
-        if (isNaN(parseFloat(myNum1)) || isNaN(parseFloat(myNum2)) || !validOperators.includes(operator)) {
+        if (isNaN(myNum1) || isNaN(myNum2)) {
             alert('Пожалуйста, введите число');
+            return;
         }
 
         switch (operator) {
@@ -22,6 +22,10 @@ function calcul() {
             case '*':
                 alert(myNum1 * myNum2);
                 break;
+
+            default:
+                alert('Unknown operator');
+                return;
         }
 
     } while (confirm('Хотите ли вы решить еще один пример?'));

@@ -1,11 +1,9 @@
 function greatestCommonFactor() {
     let NOD;
-    const a = prompt('Введите первое число: ');
-    const b = prompt('Введите второе число: ');
+    const a = +prompt('Введите первое число: ');
+    const b = +prompt('Введите второе число: ');
 
-    let res = (a.replace(/\d+/, '') || b.replace(/\d+/, ''));
-
-    if (res.length > 0) {
+    if (isNaN(a) || isNaN(b)) {
         alert('Укажите число!');
         return;
     }
