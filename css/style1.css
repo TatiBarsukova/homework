@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(../img/muzy-ka.jpeg);
+    background-position:inherit;
+}
+
+.songs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: lawngreen;
+}
+
+.text {
+font-size: 30px;
+font-style: italic;
+}
+
+.btn {
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 300;
+    color: lawngreen;
+    background:rgb(44, 10, 240);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn:active {
+background: lawngreen;
+color: rgb(44, 10, 240);
+
+}
+
+.list {
+    font-style: italic;
+    font-weight: 700;
+}
