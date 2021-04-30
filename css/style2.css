@@ -1,0 +1,90 @@
+ @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #abdfff;
+}
+
+ .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5% 15%;
+}
+
+.text {
+    color: blueviolet;
+    font-size: 30px;
+}
+
+.btn {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 300;
+    color:yellow;
+    background:blueviolet;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    width: 300px;
+    height: 300px;
+    overflow: auto;
+    background-image: url(../img/positiv.png);
+    background-position: center;
+}
+
+
+.modal__window {
+    animation-name: animate;
+    animation-duration: 0.5s;
+    position: relative;
+    margin:0 auto;
+    padding: 0;
+    width: 51%;
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+.close {
+    color: yellow;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    left: 174px;
+    bottom: 175px;
+    text-shadow: black 2px 3px 4px;
+
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal__text {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 800;
+    color: yellow;
+    text-shadow: black 2px 3px 4px;
+}
