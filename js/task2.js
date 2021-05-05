@@ -38,11 +38,16 @@ let productList = [
     }
 ];
 
+function printTotal(product) {
+    console.log(`Название продукта: ${product.productName}, К-во: ${product.quantity}
+    Цена: ${Math.abs(product.price).toFixed(2)}, Сумма ${Math.abs(product.quantity * product.price).toFixed(2)} `);
+};
+
 //Распечатка чека на экран;
 function printCheck() {
-    for (let i = 0; i < productList.length; i++)
-        console.log(`Название продукта: ${productList[i].productName}, К-во: ${productList[i].quantity}
-                    Цена: ${Math.abs(productList[i].price).toFixed(2)}, Сумма ${Math.abs(productList[i].quantity * productList[i].price).toFixed(2)} `);
+    for (let i = 0; i < productList.length; i++) {
+        printTotal(productList[i]);
+    }
 };
 printCheck();
 
@@ -53,8 +58,7 @@ function sumCheck() {
     let sum = 0;
     for (let i = 0; i < productList.length; i++) {
         if (productList[i].bought === true) {
-            console.log(`Название продукта: ${productList[i].productName}, К-во: ${productList[i].quantity}
-            Цена: ${Math.abs(productList[i].price).toFixed(2)}, Сумма ${Math.abs(productList[i].quantity * productList[i].price).toFixed(2)} `);
+            printTotal(productList[i]);
             sum += productList[i].quantity * productList[i].price;
         }
     }
@@ -66,7 +70,7 @@ console.log('-------');
 
 //Получение самой дорогой покупки в чеке;
 function maxSumInCheck() {
-    let max = -Infinity;
+    let max = 0;
     for (let i = 0; i < productList.length; i++) {
         const sum = productList[i].quantity * productList[i].price;
         if (sum > max) {
@@ -89,9 +93,6 @@ function averageCostProduct() {
     return console.log("Средняя стоимость одного товара в чеке: " + result + "грн.");
 }
 averageCostProduct();
-
-
-
 
 
 
